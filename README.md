@@ -4,7 +4,7 @@
 
 | Device Name       | Codename | Status               |
 |-------------------|----------|----------------------|
-| Galaxy S20        | x1s      | 🚧 Building          |
+| Galaxy S20        | x1s      |[![LineageOS-S20](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s.yml)|
 | Galaxy S20+       | y2s      | ❌ Not Yet Building  |
 | Galaxy S20 Ultra  | z3s      | ❌ Not Yet Building  |
 
