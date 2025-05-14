@@ -1,4 +1,4 @@
-name: LineageOS-x1s
+name: LineageOS-x1s-large
 
 on:
     workflow_dispatch: 
