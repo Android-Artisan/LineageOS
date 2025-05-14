@@ -39,7 +39,7 @@ jobs:
       - name: Prepare the device-specific code
         run: |
           cd ~/android/lineage
-          mkdir .repo/local_manifests
+          mkdir -p .repo/local_manifests
           curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/s20x/roomservice.xml
           source build/envsetup.sh
       
