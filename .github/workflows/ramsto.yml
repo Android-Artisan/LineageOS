@@ -8,6 +8,4 @@ jobs:
       runs-on: ubuntu-22.04
       steps:
       - name: Check storage and ram
-        run: |
-        df -h
-        free -h
+        run: df -h && free -h  
