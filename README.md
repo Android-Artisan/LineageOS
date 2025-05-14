@@ -5,8 +5,8 @@
 | Device Name       | Codename | Status               |
 |-------------------|----------|----------------------|
 | Galaxy S20        | x1s      |[![LineageOS-S20](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s.yml)|
-| Galaxy S20+       | y2s      | ❌ Not Yet Building  |
-| Galaxy S20 Ultra  | z3s      | ❌ Not Yet Building  |
+| Galaxy S20+       | y2s      |[![LineageOS-S20+](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s.yml)|
+| Galaxy S20 Ultra  | z3s      |[![LineageOS-S20-Ultra](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s.yml)|
 
 ## 🛠️ Status
 
