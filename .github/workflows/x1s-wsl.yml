@@ -46,6 +46,7 @@ jobs:
       - name: Start the build
         run: |
           cd ~/android/lineage
+          repo sync
           source build/envsetup.sh
           brunch x1s
 
