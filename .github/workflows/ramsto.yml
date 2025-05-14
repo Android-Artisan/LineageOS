@@ -1,0 +1,13 @@
+name: Get storage idea
+
+on:
+    workflow_dispatch: 
+
+jobs:
+    build:
+      runs-on: ubuntu-22.04
+      steps:
+      - name: Check storage and ram
+        run: |
+        df -h
+        free -h
