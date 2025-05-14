@@ -8,6 +8,7 @@ jobs:
       runs-on: UbuntuWSL-16GB-4C-256GB
       steps:
       - name: Install the build packages
+        timeout-minutes: 4300
         run: |
           sudo apt update
           sudo apt upgrade -y
@@ -31,6 +32,7 @@ jobs:
           git config --global user.name Artisan
       
       - name: Initialize the LineageOS source repository
+        timeout-minutes: 4300
         run: |
           cd ~/android/lineage
           repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
@@ -38,19 +40,22 @@ jobs:
 
       - name: Prepare the device-specific code
         run: |
+          timeout-minutes: 4300
           cd ~/android/lineage
           mkdir -p .repo/local_manifests
           curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/s20x/roomservice.xml
           source build/envsetup.sh
       
       - name: Start the build
+        timeout-minutes: 4300
         run: |
           cd ~/android/lineage
           repo sync
           source build/envsetup.sh
           brunch x1s
 
-      - name: Upload to Release
+      - name: Upload Recovery Release
+        timeout-minutes: 4300
         uses: softprops/action-gh-release@v1
         with:
           files: |
@@ -62,6 +67,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload to Release
+        timeout-minutes: 4300
         uses: softprops/action-gh-release@v1
         with:
           files: |
