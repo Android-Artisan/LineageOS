@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project name="Ronnz98/device_samsung_universal9830-common" path="device/samsung/universal9830" remote="github" revision="fourteen-qpr3"/>
+  <project name="Ronnz98/device_samsung_universal9830-common" path="device/samsung/universal9830-common" remote="github" revision="fourteen-qpr3"/>
   <project name="Ronnz98/android_device_samsung_x1s" path="device/samsung/x1s" remote="github" revision="fourteen-qpr3"/>
   <project name="Ronnz98/android_device_samsung_y2s" path="device/samsung/y2s" remote="github" revision="fourteen-qpr3"/>
   <project name="Ronnz98/android_device_samsung_z3s" path="device/samsung/z3s" remote="github" revision="fourteen-qpr3"/>
