@@ -4,9 +4,9 @@
 
 | Device Name       | Codename | Status               |
 |-------------------|----------|----------------------|
-| Galaxy S20        | x1s      | Building|
-| Galaxy S20+       | y2s      | Success|
-| Galaxy S20 Ultra  | z3s      | Building|
+| Galaxy S20        | x1s      | ✅ Success |
+| Galaxy S20+       | y2s      | ✅ Success |
+| Galaxy S20 Ultra  | z3s      | ✅ Success |
 
 ### 🛠️ Status
 
