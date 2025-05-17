@@ -35,7 +35,7 @@
 - [android_device_samsung_z3s](https://github.com/Ronnz98/android_device_samsung_z3s)
 
 #### 🧬 Kernel
-- [android_kernel_samsung_exynos990](https://github.com/Android-Artisan/android_kernel_samsung_exynos990)
+- [android_kernel_samsung_universal9830](https://github.com/fcuzzocrea/android_kernel_samsung_universal9830)
 
 #### 🔧 Vendor Blobs
 - [proprietary_vendor_samsung_x1s](https://github.com/Ronnz98/proprietary_vendor_samsung_x1s)
