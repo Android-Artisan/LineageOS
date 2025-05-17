@@ -1,12 +1,15 @@
 name: LineageOS-x1s-WSL
 
 on:
-    workflow_dispatch: 
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-    build:
-      runs-on: UbuntuWSL-16GB-16C-2048GB
-      steps:
+  build:
+    runs-on: UbuntuWSL-16GB-16C-2048GB
+    steps:
       - name: Install the build packages
         run: |
           sudo apt update
@@ -38,24 +41,14 @@ jobs:
           source build/envsetup.sh
           brunch x1s
 
-      - name: Upload Recovery Release
+      - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
             /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/recovery.img
+            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/lineage-21.0-*-UNOFFICIAL-x1s.zip
           name: ArtisanROM-x1s-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
           body: lineageos 21.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload to Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-              /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/lineage-21.0-*-UNOFFICIAL-x1s.zip
-          name: ArtisanROM-x1s-${{ github.run_id }}
-          tag_name: ${{ github.run_id }}
-          body: lineageos 21.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
