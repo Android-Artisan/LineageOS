@@ -22,7 +22,7 @@ jobs:
         run: |
           cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
           repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
-          repo sync
+          sudo repo sync --force-sync
 
       - name: Prepare the device-specific code
         run: |
@@ -34,7 +34,7 @@ jobs:
       - name: Start the build
         run: |
           cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
-          repo sync
+          sudo repo sync --force-sync
           source build/envsetup.sh
           brunch z3s
 
