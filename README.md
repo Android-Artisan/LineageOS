@@ -4,9 +4,9 @@
 
 | Device Name       | Codename | Status               |
 |-------------------|----------|----------------------|
-| Galaxy S20        | x1s      | ✅ Success |
-| Galaxy S20+       | y2s      | ✅ Success |
-| Galaxy S20 Ultra  | z3s      | ✅ Success |
+| Galaxy S20        | x1s      | [![LineageOS-x1s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s-wsl.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s-wsl.yml) |
+| Galaxy S20+       | y2s      | [![LineageOS-y2s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml) |
+| Galaxy S20 Ultra  | z3s      | [![LineageOS-z3s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml) |
 
 ### 🛠️ Status
 
