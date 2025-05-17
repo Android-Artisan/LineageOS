@@ -12,13 +12,6 @@ jobs:
           sudo apt update
           sudo apt upgrade -y
           sudo apt -y install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick protobuf-compiler python3-protobuf lib32readline-dev lib32z1-dev libdw-dev libelf-dev lz4 libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
-      
-      - name: Install the repo command
-        run: |
-          curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-          sudo cp ~/bin/repo /usr/bin/repo
-          sudo chmod a+x ~/bin/repo
-          sudo chmod a+x /usr/bin/repo
 
       - name: Configure git
         run: |
