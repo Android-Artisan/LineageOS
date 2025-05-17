@@ -1,14 +1,14 @@
 # 📱 LineageOS for Samsung Galaxy S20 Series (SM-G98x) / S6/E (WIP)
 
-## ✅ Supported Devices
+### ✅ Supported Devices
 
 | Device Name       | Codename | Status               |
 |-------------------|----------|----------------------|
-| Galaxy S20        | x1s      |[![LineageOS-S20](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s-wsl.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s-wsl.yml)|
-| Galaxy S20+       | y2s      |[![LineageOS-S20+](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml)|
-| Galaxy S20 Ultra  | z3s      |[![LineageOS-S20-Ultra](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml/badge.svg)](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml)|
+| Galaxy S20        | x1s      | Building|
+| Galaxy S20+       | y2s      | Success|
+| Galaxy S20 Ultra  | z3s      | Building|
 
-## 🛠️ Status
+### 🛠️ Status
 
 | Component           | Status                   |
 |---------------------|--------------------------|
@@ -24,25 +24,25 @@
 | Fingerprint         | ✅ Working               |
 | VoLTE / VoWiFi      | ❌ Not Working           |
 
-## 📦 Sources
+### 📦 Sources
 
-### 📁 Room Service
+#### 📁 Room Service
 - For S20 Series (Ronnz98)
 
-### 📂 Device Trees
+#### 📂 Device Trees
 - [android_device_samsung_x1s](https://github.com/Ronnz98/android_device_samsung_x1s)
 - [android_device_samsung_y2s](https://github.com/Ronnz98/android_device_samsung_y2s)
 - [android_device_samsung_z3s](https://github.com/Ronnz98/android_device_samsung_z3s)
 
-### 🧬 Kernel
+#### 🧬 Kernel
 - [android_kernel_samsung_exynos990](https://github.com/Android-Artisan/android_kernel_samsung_exynos990)
 
-### 🔧 Vendor Blobs
+#### 🔧 Vendor Blobs
 - [proprietary_vendor_samsung_x1s](https://github.com/Ronnz98/proprietary_vendor_samsung_x1s)
 - [proprietary_vendor_samsung_y2s](https://github.com/Ronnz98/proprietary_vendor_samsung_y2s)
 - [proprietary_vendor_samsung_z3s](https://github.com/Ronnz98/proprietary_vendor_samsung_z3s)
 
-### 📚 Common Dependencies
+#### 📚 Common Dependencies
 - [openmax](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_openmax)
 - [config](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_config)
 - [graphics](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_graphics)
