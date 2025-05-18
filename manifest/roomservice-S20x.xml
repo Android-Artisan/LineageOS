@@ -7,7 +7,7 @@
   <project name="Ronnz98/android_device_samsung_x1s" path="device/samsung/x1s" remote="github" revision="fourteen-qpr3"/>
   <project name="ArtisanROM/android_device_samsung_y2q" path="device/samsung/y2q" remote="github" revision="lineage-21"/>
   <project name="Ronnz98/android_device_samsung_y2s" path="device/samsung/y2s" remote="github" revision="fourteen-qpr3"/>
-  <project name="ArtisanROM/android_device_samsung_z3q" path="device/samsung/y2q" remote="github" revision="lineage-21"/>
+  <project name="ArtisanROM/android_device_samsung_z3q" path="device/samsung/z3q" remote="github" revision="lineage-21"/>
   <project name="Ronnz98/android_device_samsung_z3s" path="device/samsung/z3s" remote="github" revision="fourteen-qpr3"/>
 
   <project name="ArtisanROM/android_kernel_samsung_sm8250" path="kernel/samsung/sm8250" remote="github" revision="lineage-21"/>
