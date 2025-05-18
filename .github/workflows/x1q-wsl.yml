@@ -47,7 +47,7 @@ jobs:
           files: |
             /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1q/recovery.img
             /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1q/lineage-21.0-*-UNOFFICIAL-x1q.zip
-          name: ArtisanROM-nightly-x1s-${{ github.run_id }}
+          name: ArtisanROM-nightly-x1q-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
           body: ArtisanROM-Nightly
         env:
