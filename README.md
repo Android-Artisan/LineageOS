@@ -30,7 +30,8 @@
 ### 📦 Sources
 
 #### 📁 Room Service
-- For S20 Series (Ronnz98)
+- For S20 Series Exynos [Ronnz98](https://github.com/Ronnz98)
+- For S20 Series Snapdragon [Android-Artisan](https://github.com/Android-Artisan)
 
 #### 📂 Device Trees
 - [android_device_samsung_x1s](https://github.com/Ronnz98/android_device_samsung_x1s)
