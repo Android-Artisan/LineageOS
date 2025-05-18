@@ -47,8 +47,8 @@ jobs:
           files: |
             /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/z3s/recovery.img
             /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/z3s/lineage-21.0-*-UNOFFICIAL-z3s.zip
-          name: ArtisanROM-z3s-${{ github.run_id }}
+          name: ArtisanROM-nightly-z3s-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
-          body: lineageos 21.0
+          body: ArtisanROM-Nightly
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
