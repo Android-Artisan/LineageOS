@@ -5,10 +5,10 @@
 | Device Name       | Codename | Chipset    | Status               |
 |-------------------|----------|------------|----------------------|
 | Galaxy S20        | x1s      | Exynos     | [![LineageOS-x1s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1s-wsl.yml) |
-| Galaxy S20+       | y2s      | Exynos     | [![LineageOS-y2s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml) |
-| Galaxy S20 Ultra  | z3s      | Exynos     | [![LineageOS-z3s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml) |
 | Galaxy S20        | x1q      | Snapdragon | [![LineageOS-x1q-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1q-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/x1q-wsl.yml) |
+| Galaxy S20+       | y2s      | Exynos     | [![LineageOS-y2s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2s-wsl.yml) |
 | Galaxy S20+       | y2q      | Snapdragon | [![LineageOS-y2q-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2q-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/y2q-wsl.yml) |
+| Galaxy S20 Ultra  | z3s      | Exynos     | [![LineageOS-z3s-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3s-wsl.yml) |
 | Galaxy S20 Ultra  | z3q      | Snapdragon | [![LineageOS-z3q-WSL](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3q-wsl.yml/badge.svg?event=workflow_dispatch)](https://github.com/Android-Artisan/LineageOS/actions/workflows/z3q-wsl.yml) |
 
 ### 🛠️ Status
