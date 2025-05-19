@@ -21,23 +21,9 @@ jobs:
           git config --global user.email romartisan2025@gmail.com
           git config --global user.name Artisan
       
-      - name: Initialize the LineageOS source repository
-        run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
-          sudo repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
-          sudo repo sync --force-sync
-
-      - name: Prepare the device-specific code
-        run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
-          sudo mkdir -p .repo/local_manifests
-          sudo curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/roomservice-S20x.xml
-          source build/envsetup.sh
-      
       - name: Start the build
         run: |
           cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
-          sudo repo sync --force-sync
           source build/envsetup.sh
           brunch y2s
 
