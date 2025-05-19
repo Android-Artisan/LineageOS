@@ -1,0 +1,29 @@
+name: LineageOS-y2q-WSL-ignore sync
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: UbuntuWSL-16GB-16C-2048GB
+    steps:
+      - name: Start the build
+        run: |
+          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
+          source build/envsetup.sh
+          brunch y2q
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/y2q/recovery.img
+            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/y2q/lineage-21.0-*-UNOFFICIAL-y2q.zip
+          name: ArtisanROM-nightly-y2q-${{ github.run_id }}
+          tag_name: ${{ github.run_id }}
+          body: ArtisanROM-Nightly
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
