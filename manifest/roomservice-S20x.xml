@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project name="ArtisanROM/android_device_samsung_sm8250-common" path="device/samsung/sm8250-common" remote="github" revision="lineage-21"/>
   <project name="Ronnz98/device_samsung_universal9830-common" path="device/samsung/universal9830-common" remote="github" revision="fourteen-qpr3"/>
-  <project name="ArtisanROM/android_device_samsung_x1q" path="device/samsung/x1q" remote="github" revision="lineage-21"/>
   <project name="Ronnz98/android_device_samsung_x1s" path="device/samsung/x1s" remote="github" revision="fourteen-qpr3"/>
-  <project name="ArtisanROM/android_device_samsung_y2q" path="device/samsung/y2q" remote="github" revision="lineage-21"/>
   <project name="Ronnz98/android_device_samsung_y2s" path="device/samsung/y2s" remote="github" revision="fourteen-qpr3"/>
-  <project name="ArtisanROM/android_device_samsung_z3q" path="device/samsung/z3q" remote="github" revision="lineage-21"/>
   <project name="Ronnz98/android_device_samsung_z3s" path="device/samsung/z3s" remote="github" revision="fourteen-qpr3"/>
 
-  <project name="ArtisanROM/android_kernel_samsung_sm8250" path="kernel/samsung/sm8250" remote="github" revision="lineage-21"/>
   <project name="fcuzzocrea/android_kernel_samsung_universal9830" path="kernel/samsung/universal9830" remote="github" revision="lineage-21-qpr3"/>
 
-  <project name="ArtisanROM/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-21" />
   <project name="Ronnz98/proprietary_vendor_samsung_universal9830-common" path="vendor/samsung/universal9830-common" remote="github" revision="lineage-21-qpr3" />
   <project name="Ronnz98/proprietary_vendor_samsung_x1s" path="vendor/samsung/x1s" remote="github" revision="lineage-21-qpr3" />
   <project name="Ronnz98/proprietary_vendor_samsung_y2s" path="vendor/samsung/y2s" remote="github" revision="lineage-21-qpr3" />
