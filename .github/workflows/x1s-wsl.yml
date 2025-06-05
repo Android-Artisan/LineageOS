@@ -18,13 +18,13 @@ jobs:
 
       - name: Initialize the LineageOS source repository
         run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
+          cd /mnt/d/android/lineage
           sudo repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
           sudo repo sync --force-sync
 
       - name: Prepare the device-specific code
         run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
+          cd /mnt/wsl/d/android/lineage
           mkdir -p .repo/local_manifests
           sudo curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/roomservice-S20x.xml
           source build/envsetup.sh
@@ -36,7 +36,7 @@ jobs:
       
       - name: Start the build
         run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
+          cd /mnt/d/android/lineage
           source build/envsetup.sh
           brunch x1s
 
@@ -44,8 +44,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/recovery.img
-            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/lineage-21.0-*-UNOFFICIAL-x1s.zip
+            /mnt/d/android/lineage/out/target/product/x1s/recovery.img
+            /mnt/d/android/lineage/out/target/product/x1s/lineage-21.0-*-UNOFFICIAL-x1s.zip
           name: ArtisanROM-nightly-x1s-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
           body: ArtisanROM-Nightly
