@@ -1,4 +1,4 @@
-name: LineageOS-y2s-WSL
+name: ArtisanROM-S20+
 
 on:
   workflow_dispatch:
@@ -19,14 +19,14 @@ jobs:
       - name: Initialize the LineageOS source repository
         run: |
           cd /mnt/d/android/lineage
-          sudo repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
+          repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
 
       - name: Prepare the device-specific code
         run: |
           cd /mnt/d/android/lineage
-          sudo mkdir -p .repo/local_manifests
-          sudo curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/roomservice-S20x.xml
-          sudo repo sync --force-sync
+          mkdir -p .repo/local_manifests
+          curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/roomservice-S20x.xml
+          repo sync --force-sync
           source build/envsetup.sh
       
       - name: Configure git
