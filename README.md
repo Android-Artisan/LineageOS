@@ -58,3 +58,14 @@
 - [exynos5](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exynos5)
 - [android_hardware_samsung](https://github.com/Ronnz98/android_hardware_samsung)
 - [sepolicy](https://github.com/Ronnz98/android_device_samsung_slsi_sepolicy)
+
+
+## Star History
+
+<a href="https://www.star-history.com/#Android-Artisan/LineageOS&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Android-Artisan/LineageOS&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Android-Artisan/LineageOS&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Android-Artisan/LineageOS&type=Date" />
+ </picture>
+</a>
