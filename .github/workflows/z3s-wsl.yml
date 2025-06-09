@@ -17,12 +17,12 @@ jobs:
 
       - name: Initialize the ArtisanROM source repository
         run: |
-          cd /mnt/d/android/lineage
+          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
           repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
 
       - name: Prepare the device-specific code
         run: |
-          cd /mnt/d/android/lineage
+          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
           mkdir -p .repo/local_manifests
           curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/roomservice-S20x.xml
           repo sync --force-sync
@@ -35,7 +35,7 @@ jobs:
       
       - name: Build ArtisanROM
         run: |
-          cd /mnt/d/android/lineage
+          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
           source build/envsetup.sh
           brunch z3s
 
@@ -43,8 +43,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            /mnt/d/android/lineage/out/target/product/z3s/recovery.img
-            /mnt/d/android/lineage/out/target/product/z3s/lineage-21.0-*-UNOFFICIAL-z3s.zip
+            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/z3s/recovery.img
+            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/z3s/lineage-21.0-*-UNOFFICIAL-z3s.zip
           name: ArtisanROM-nightly-S20U-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
           body: ArtisanROM-Nightly-S20-Ultra
