@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1747458748000",
-      "filename": "lineage-21.0-20250517-UNOFFICIAL-x1s.zip",
-      "id": "d2bf12850c80da15a8360620d3037814146c8da100e8bb2301cce249eb193172",
+      "datetime": "1749979626000",
+      "filename": "lineage-21.0-20250519-UNOFFICIAL-x1s.zip",
+      "id": "ed976ea607bf4df8cb189e1053a3af11",
       "romtype": "UNOFFICIAL",
-      "size": "1029659055",
-      "url": "https://github.com/Android-Artisan/LineageOS/releases/download/V1/lineage-21.0-20250517-UNOFFICIAL-x1s.zip",
+      "size": "1029617713",
+      "url": "https://github.com/Android-Artisan/LineageOS/releases/download/V1.5/lineage-21.0-20250519-UNOFFICIAL-x1s.zip",
       "version": "21.0"
     }
   ]
