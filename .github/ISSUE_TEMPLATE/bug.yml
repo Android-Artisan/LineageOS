@@ -1,6 +1,6 @@
-name: AutoPilot
+name: ArtisanROM Bug 
 description: Report an issue with ArtisanROM 
-title: "[AUTOPILOT] "
+title: "[BUG] "
 labels: ArtisanROM-Bug, Pending
 assignees: Android-Artisan 
 
