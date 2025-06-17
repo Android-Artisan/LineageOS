@@ -15,7 +15,7 @@ body:
     id: suggestion
     attributes:
       label: "Describe the Suggestion"
-      placeholder: Please describe your suggestion for **ArtisanROM**.
+      placeholder: Please describe your suggestion for ArtisanROM.
     validations:
       required: true
 
