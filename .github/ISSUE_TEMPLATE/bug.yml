@@ -1,7 +1,7 @@
 name: ArtisanROM Bug 
 description: Report an issue with ArtisanROM 
 title: "[BUG] "
-labels: ArtisanROM-Bug, Pending
+labels: ArtisanROM V1 bug, Pending
 assignees: Android-Artisan 
 
 body:
