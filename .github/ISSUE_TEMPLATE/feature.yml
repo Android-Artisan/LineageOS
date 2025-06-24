@@ -1,7 +1,7 @@
 name: Feature Request
 description: Suggest feature changes or additions
 title: "[Feature Request] "
-labels: Feature Request
+labels: Feature Request, enhancement
 assignees: Android-Artisan
 
 body:
