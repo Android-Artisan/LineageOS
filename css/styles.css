@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --glass-bg: rgba(255,255,255,0.32);
+  --glass-bg-bold: rgba(255,255,255,0.52);
+  --glass-outline: rgba(255,255,255,0.22);
+  --main-gradient: linear-gradient(120deg, #c471f5, #fa71cd 80%);
+  --blue: #4364f7;
+  --blue2: #6fb1fc;
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  background: var(--main-gradient);
+  color: #222;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+header {
+  background: var(--glass-bg-bold);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1.5px solid var(--glass-outline);
+  padding: 2em 1em 1.2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 32px 32px;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  margin: 0 0 0.2em 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 2.4em;
+  background: linear-gradient(90deg, #4364f7 20%, #c471f5 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  display: flex;
+  gap: 2em;
+  margin-top: 0.5em;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 0.3em 1em;
+  border-radius: 12px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a.active {
+  background: rgba(67,100,247,0.10);
+  color: #c471f5;
+}
+
+main {
+  max-width: 900px;
+  margin: 2.5em auto 2em auto;
+  padding: 2em;
+  border-radius: 36px;
+  background: var(--glass-bg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+section, ul {
+  margin-bottom: 2em;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+.device-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.device-card {
+  background: var(--glass-bg);
+  border-radius: 22px;
+  box-shadow: 0 4px 24px 0 rgba(67, 100, 247, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid var(--glass-outline);
+  padding: 2em 1.6em;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s, border 0.18s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.device-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 36px 0 rgba(67, 100, 247, 0.17);
+  border: 1.5px solid var(--blue);
+}
+
+.device-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  font-size: 1.38em;
+  font-weight: 700;
+  color: #c471f5;
+}
+
+.device-card p {
+  margin: 0.18em 0;
+  color: #23272f;
+}
+
+.glass-section {
+  background: var(--glass-bg);
+  border-radius: 22px;
+  box-shadow: 0 4px 24px 0 rgba(67, 100, 247, 0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid var(--glass-outline);
+  padding: 2em 1.6em;
+  margin-bottom: 2em;
+}
+
+.download-link {
+  display: inline-block;
+  background: linear-gradient(90deg, #c471f5, #fa71cd);
+  color: #fff;
+  padding: 0.9em 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.2em;
+  box-shadow: 0 4px 16px rgba(67, 100, 247, 0.12);
+  font-size: 1.09em;
+  transition: background 0.18s;
+}
+
+.download-link:hover {
+  background: linear-gradient(90deg, #fa71cd 20%, #c471f5 80%);
+}
+
+.flash-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.flash-card {
+  background: var(--glass-bg-bold);
+  border-left: 4px solid #c471f5;
+  border-radius: 16px;
+  padding: 1.3em 1em 1em 1.2em;
+  min-width: 220px;
+  max-width: 320px;
+  box-shadow: 0 2px 10px rgba(67, 100, 247, 0.10);
+  margin-bottom: 1em;
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flash-card-title {
+  font-weight: 600;
+  margin-bottom: 0.6em;
+  color: #c471f5;
+  font-size: 1.08em;
+}
+
+.wiki-note {
+  color: #b71c1c;
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+footer {
+  text-align: center;
+  background: var(--glass-bg-bold);
+  color: #23272f;
+  padding: 1.2em 0 1em 0;
+  font-size: 1em;
+  margin-top: 2em;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -3px 24px 0 rgba(67, 100, 247, 0.06);
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 1em;
+  }
+  .device-list, .flash-cards {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .glass-section {
+    padding: 1.1em 0.7em;
+  }
+}
