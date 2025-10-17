@@ -23,6 +23,5 @@
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-23.0" />
 
   <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="github" revision="lineage-23.0" />
-  <project name="ExtremeXT/android_hardware_samsung_slsi-linaro_sgpu" path="hardware/samsung_slsi-linaro/sepolicy" remote="github" revision="lineage-23.0" />
-  
+
 </manifest>
