@@ -6,7 +6,7 @@
   <project name="ExtremeXT/android_device_samsung_y2s" path="device/samsung/y2s" remote="github" revision="lineage-23.0"/>
   <project name="ExtremeXT/android_device_samsung_z3s" path="device/samsung/z3s" remote="github" revision="lineage-23.0"/>
 
-  <project name="ExtremeXT/990_upstream_v2" path="kernel/samsung/universal9830" remote="github" revision="aosp_wip"/>
+  <project name="ExtremeXT/android_kernel_samsung_universal9830" path="kernel/samsung/universal9830" remote="github" revision="lineage-23.0"/>
 
   <project name="ExtremeXT/proprietary_vendor_samsung_universal9830-common" path="vendor/samsung/universal9830-common" remote="github" revision="lineage-23.0" />
   <project name="ExtremeXT/proprietary_vendor_samsung_x1s" path="vendor/samsung/x1s" remote="github" revision="lineage-23.0" />
@@ -23,5 +23,6 @@
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-23.0" />
 
   <project name="LineageOS/android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="github" revision="lineage-23.0" />
-
+  <project name="ExtremeXT/android_hardware_samsung_slsi-linaro_sgpu" path="hardware/samsung_slsi-linaro/sepolicy" remote="github" revision="lineage-23.0" />
+  
 </manifest>
