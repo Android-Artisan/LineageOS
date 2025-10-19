@@ -44,7 +44,7 @@ jobs:
         with:
           files: |
             /home/artisan/ArtisanROM/Lineage/out/target/product/z3s/recovery.img
-            /home/artisan/ArtisanROM/Lineage/out/target/product/z3s/lineage-21.0-*-UNOFFICIAL-z3s.zip
+            /home/artisan/ArtisanROM/Lineage/out/target/product/z3s/lineage-23.0-*-UNOFFICIAL-z3s.zip
           name: ArtisanROM-nightly-S20U-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
           body: ArtisanROM-Nightly-S20-Ultra
