@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: UbuntuWSL-16GB-16C-2048GB
+    runs-on: UbuntuWSL-16GB-8C-2048GB
     steps:
       - name: Install the build packages
         run: |
@@ -18,25 +18,25 @@ jobs:
 
       - name: Initialize the ArtisanROM source repository
         run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
-          repo init -u https://github.com/ArtisanROM/android.git -b lineage-21.0 --git-lfs
+          cd ~/ArtisanROM/Lineage
+          repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ArtisanROM/android -b lineage-23.0
 
       - name: Prepare the device-specific code
         run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
+          cd ~/ArtisanROM/Lineage
           mkdir -p .repo/local_manifests
           curl -o .repo/local_manifests/roomservice.xml https://raw.githubusercontent.com/Android-Artisan/LineageOS/refs/heads/main/manifest/roomservice-S20x.xml
-          repo sync --force-sync
+          repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
           source build/envsetup.sh
       
       - name: Configure git
         run: |
           git config --global user.email romartisan2025@gmail.com
-          git config --global user.name Artisan
+          git config --global user.name Android-Artisan
       
       - name: Build ArtisanROM
         run: |
-          cd /mnt/wsl/PHYSICALDRIVE1/android/lineage
+          cd ~/ArtisanROM/Lineage
           source build/envsetup.sh
           brunch x1s
 
@@ -44,8 +44,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/recovery.img
-            /mnt/wsl/PHYSICALDRIVE1/android/lineage/out/target/product/x1s/lineage-21.0-*-UNOFFICIAL-x1s.zip
+            /home/artisan/ArtisanROM/Lineage/out/target/product/x1s/recovery.img
+            /home/artisan/ArtisanROM/Lineage/out/target/product/x1s/lineage-23.0-*-UNOFFICIAL-x1s.zip
           name: ArtisanROM-nightly-S20-${{ github.run_id }}
           tag_name: ${{ github.run_id }}
           body: ArtisanROM-Nightly-S20
