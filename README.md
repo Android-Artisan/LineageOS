@@ -1,4 +1,4 @@
-# 📱 LineageOS for Samsung Galaxy S20 Series (SM-G98x) / S6/E (WIP)
+# 📱 LineageOS for Samsung Galaxy S20 Series (SM-G98x)
 
 ### ✅ Supported Devices
 
@@ -18,7 +18,7 @@
 | RIL (Calls, SMS)    | ✅ Working               |
 | Mobile Data         | ✅ Working               |
 | Audio               | ✅ Working               |
-| Bluetooth           | ✅ Working (not in calls)|
+| Bluetooth           | ✅ Working               |
 | NFC                 | ✅ Working               |
 | GPS                 | ✅ Working               |
 | Camera              | ✅ Working               |
@@ -28,26 +28,20 @@
 ### 📦 Sources
 
 #### 📁 Room Service
-- For S20 Series Exynos [Ronnz98](https://github.com/Ronnz98)
-- For S20 Series Snapdragon [Android-Artisan](https://github.com/Android-Artisan)
+- For S20 Series Exynos [Android-Artisan](https://github.com/Android-Artisan)
 
 #### 📂 Device Trees
-- [android_device_samsung_x1s](https://github.com/Ronnz98/android_device_samsung_x1s)
-- [android_device_samsung_x1q](https://github.com/ArtisanROM/android_device_samsung_x1q)
-- [android_device_samsung_y2s](https://github.com/Ronnz98/android_device_samsung_y2s)
-- [android_device_samsung_y2q](https://github.com/ArtisanROM/android_device_samsung_y2q)
-- [android_device_samsung_z3s](https://github.com/Ronnz98/android_device_samsung_z3s)
-- [android_device_samsung_z3q](https://github.com/ArtisanROM/android_device_samsung_z3q)
+- [android_device_samsung_x1s](https://github.com/LineageOS/android_device_samsung_x1s)
+- [android_device_samsung_y2s](https://github.com/LineageOS/android_device_samsung_y2s)
+- [android_device_samsung_z3s](https://github.com/LineageOS/android_device_samsung_z3s)
 
 #### 🧬 Kernel
-- [android_kernel_samsung_universal9830](https://github.com/fcuzzocrea/android_kernel_samsung_universal9830)
-- [android_kernel_samsung_sm8250](https://github.com/ArtisanROM/android_kernel_samsung_sm8250)
+- [android_kernel_samsung_universal9830](https://github.com/LineageOS/android_kernel_samsung_universal9830)
 
 #### 🔧 Vendor Blobs
-- [proprietary_vendor_samsung_snapdragon](https://github.com/ArtisanROM/proprietary_vendor_samsung)
-- [proprietary_vendor_samsung_x1s](https://github.com/Ronnz98/proprietary_vendor_samsung_x1s)
-- [proprietary_vendor_samsung_y2s](https://github.com/Ronnz98/proprietary_vendor_samsung_y2s)
-- [proprietary_vendor_samsung_z3s](https://github.com/Ronnz98/proprietary_vendor_samsung_z3s)
+- [proprietary_vendor_samsung_x1s](https://github.com/TheMuppets/proprietary_vendor_samsung_x1s)
+- [proprietary_vendor_samsung_y2s](https://github.com/TheMuppets/proprietary_vendor_samsung_y2s)
+- [proprietary_vendor_samsung_z3s](https://github.com/TheMuppets/proprietary_vendor_samsung_z3s)
 
 #### 📚 Common Dependencies
 - [openmax](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_openmax)
@@ -56,8 +50,8 @@
 - [interfaces](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_interfaces)
 - [exynos](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exynos)
 - [exynos5](https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exynos5)
-- [android_hardware_samsung](https://github.com/Ronnz98/android_hardware_samsung)
-- [sepolicy](https://github.com/Ronnz98/android_device_samsung_slsi_sepolicy)
+- [android_hardware_samsung](https://github.com/LineageOS/android_hardware_samsung)
+- [sepolicy](https://github.com/LineageOS/android_device_samsung_slsi_sepolicy)
 
 
 ## Star History
