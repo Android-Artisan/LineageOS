@@ -1,4 +1,4 @@
-# 📱 LineageOS for Samsung Galaxy S20 Series (SM-G98x)
+# 📱 LineageOS for Samsung Galaxy S20 Series SM-G98x(F/B)
 
 ### ✅ Supported Devices
 
